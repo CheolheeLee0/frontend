@@ -72,10 +72,10 @@ jobs:
       run: aws s3 cp --region ap-northeast-2 ./front.zip s3://chlee-s3/
       working-directory: ${{env.working-directory}}
       
-#     - name: Deploy to AWS CodeDeploy
-#       run: aws deploy create-deployment 
-#         --application-name cheolheelee-deploy
-#         --deployment-group-name cheolheelee-deploy-front
-#         --file-exists-behavior OVERWRITE 
-#         --s3-location bucket=cheolheelee01,bundleType=zip,key=front.zip
-#         --region ap-northeast-2
+    - name: Deploy to AWS CodeDeploy
+      run: aws deploy create-deployment 
+        --application-name chlee-codedeploy
+        --deployment-group-name chlee-codedeploy-group1
+        --file-exists-behavior OVERWRITE 
+        --s3-location bucket=chlee-s3,bundleType=zip,key=front.zip
+        --region ap-northeast-2
