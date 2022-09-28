@@ -69,7 +69,7 @@ jobs:
         aws-region: ap-northeast-2
 
     - name: Upload to AWS S3
-      run: aws s3 cp --region ap-northeast-2 ./front.zip s3://cheolheelee/
+      run: aws s3 cp --region ap-northeast-2 ./front.zip s3://chlee-s3/
       working-directory: ${{env.working-directory}}
       
 #     - name: Deploy to AWS CodeDeploy
