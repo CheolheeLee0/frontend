@@ -5,12 +5,12 @@ env:
 
 on:
   push:
-    branches: ["develop"]
+    branches: ["main"]
     paths:
        - 'src/**'
        - '.github/workflows/blank.yml'
   pull_request:
-    branches: ["develop"]
+    branches: ["main"]
     paths:
        - 'src/**'
        - '.github/workflows/blank.yml'
