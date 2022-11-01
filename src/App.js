@@ -17,7 +17,7 @@ function App() {
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
             <Link to={"/tutorials"} className="nav-link">
-              Tutorials
+              Tutorials cheolheelee
             </Link>
           </li>
           <li className="nav-item">
