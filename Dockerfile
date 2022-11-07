@@ -1,6 +1,3 @@
-# React + nginx 하다가 안돼서 포기함
-# nginx 를 별도로 두어도 상관 없음
-
 FROM node:18.12.0 as builder
 
 RUN mkdir /usr/src/app
